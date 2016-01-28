@@ -19,8 +19,14 @@ ActiveRecord::Schema.define(version: 20160128083359) do
   create_table "contents", force: :cascade do |t|
     t.string   "link"
     t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "total_shares"
+    t.integer  "facebook_shares"
+    t.integer  "google_shares"
+    t.integer  "reddit_shares"
+    t.integer  "linkedin_shares"
+    t.integer  "buffer_shares"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
